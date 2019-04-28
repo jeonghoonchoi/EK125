@@ -29,7 +29,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[]){
 	/*declare variables*/
     mat = mxGetDoubles(prhs[0]);/*input array*/
     length = mxGetN(prhs[0]);/*number of inputs*/
-    plhs[0] = mxCreateDoubleMatrix(1,1,mxREAL);/*array is 1x1*/
+    plhs[0] = mxCreateDoubleMatrix(1,1,mxREAL);/*output array is 1x1*/
     mean = mxGetDoubles(plhs[0]);/*output mean*/
 
     /*call function*/
